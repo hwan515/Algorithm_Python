@@ -1,2 +1,3 @@
-# CodingTest_Python
-This is a auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+# 파이썬 알고리즘 스터디 📚
+
+Python 기반 알고리즘/자료구조 학습을 위한 저장소입니다.
