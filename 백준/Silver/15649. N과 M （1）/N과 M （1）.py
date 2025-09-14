@@ -1,15 +1,17 @@
 def backtracking():
-    if len(arr) == M:
-        print(' '.join(map(str, arr)))
+    if len(result) == M:
+        print(*result)
         return
 
-    for i in range(1, N + 1):
-        if i not in arr:
-            arr.append(i)
+    for i in range(1, N+1):
+        if not visited[i]:
+            visited[i] = 1
+            result.append(i)
             backtracking()
-            arr.pop()
+            visited[i] = 0
+            result.pop()
 
 N, M = map(int, input().split())
-arr = []
-
+visited = [0] * (N+1)
+result = []
 backtracking()
